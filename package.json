@@ -2,14 +2,12 @@
   "name": "middlemarch",
   "version": "0.0.0",
   "author": "George Eliot",
-  "homepage": "https://xavierg-esp.github.io/middlemarch-vite-test",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "nightwatch --env chrome --headless",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "pinia": "2.0.24",
